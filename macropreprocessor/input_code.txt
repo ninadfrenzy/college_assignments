@@ -1,0 +1,6 @@
+MACRO My_macro &param1,&param2,&param3
+line
+line
+line
+MEND
+to be ignored
