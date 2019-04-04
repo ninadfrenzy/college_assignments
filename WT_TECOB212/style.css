@@ -1,0 +1,159 @@
+body {
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* NAV STYLES */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav > .left-side > div {
+  margin-right: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.right-side {
+  display: flex;
+}
+
+.nav > .right-side > div {
+  margin-right: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.title h1{
+  padding : 30px;
+  font-size : 75px;
+  background-color : #000000;
+  text-align : center;
+  color : white;
+    margin : auto;
+    border : 1px solid black;
+    border-radius : 5px;
+}
+
+.nav-linker {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-linker a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-linker : hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-linker a : hover {
+  color: black;
+}
+
+.form a{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.breakingnews {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border : 1px solid black;
+    border-radius : 5px;
+    font-size: 25px;
+}
+
+/* News STYLES */
+
+.news-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.news-item {
+  position: relative;
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.news-img-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-size: 35px;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 5000;
+  color: white;
+
+
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(20%);
+}
+
+
+/* About page */
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.profile-content {
+  padding: 30px;
+}
+
+.profile-content h1 {
+  color: lightseagreen;
+}
