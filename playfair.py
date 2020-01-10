@@ -43,9 +43,16 @@ print(matrixOfLetters)
 
 
 text = input('Enter text')
+betterText = ''
 text = text.replace(" ", "")
+for i in range(len(text)):
+	if(i!=len(text)-1):
+		if(text[i] == text[i+1]):
+			if(i%2 == 0 and (i+1)%2 == 1):
+				text = text[:i+1]+'X'+text[i+1:len(text)]
+		
+print(text)
 
-	
 out = [(text[i:i+2]) for i in range(0, len(text), 2)]
 if(len(out[-1])== 1):
 	out[-1] = out[-1]+'X'
@@ -78,4 +85,4 @@ for item in out:
 	else:
 		finalAns.append(matrixOfLetters[i1][j2]+matrixOfLetters[i2][j1])
 print(finalAns)
-	
+
